@@ -19,22 +19,14 @@ let package = Package(
     name: "AEPAudience",
     platforms: [.iOS(.v10)],
     products: [
-        // default
         .library(name: "AEPAudience", targets: ["AEPAudience"]),
-        // dynamic
-        .library(name: "AEPAudienceDynamic", type: .dynamic, targets: ["AEPAudience"]),
-        // static
-        .library(name: "AEPAudienceStatic", type: .static, targets: ["AEPAudience"]),
     ],
     dependencies: [
-        .package(name: "AEPCore", url: "https://github.com/adobe/aepsdk-core-ios.git", .branch("main")),
+        .package(name: "AEPCore", url: "https://github.com/adobe/aepsdk-core-ios.git", from: "3.0.0"),
     ],
     targets: [
         .target(name: "AEPAudience",
                 dependencies: ["AEPCore", .product(name: "AEPServices", package: "AEPCore"), .product(name: "AEPIdentity", package: "AEPCore")],
                 path: "AEPAudience/Sources"),
-        .target(name: "AEPAudienceTests",
-                dependencies: ["AEPAudience", "AEPCore", .product(name: "AEPServices", package: "AEPCore"), .product(name: "AEPIdentity", package: "AEPCore")],
-                path: "AEPAudience/Tests"),
     ]
 )

@@ -2,15 +2,15 @@ PODS:
   - ACPCore (2.9.3):
     - ACPCore/main (= 2.9.3)
   - ACPCore/main (2.9.3)
-  - AEPCore (3.1.0):
+  - AEPCore (3.1.2):
     - AEPRulesEngine (= 1.0.0)
-    - AEPServices (= 3.1.0)
-  - AEPIdentity (3.1.0):
-    - AEPCore (= 3.1.0)
-  - AEPLifecycle (3.1.0):
-    - AEPCore (= 3.1.0)
+    - AEPServices (= 3.1.2)
+  - AEPIdentity (3.1.2):
+    - AEPCore (= 3.1.2)
+  - AEPLifecycle (3.1.2):
+    - AEPCore (= 3.1.2)
   - AEPRulesEngine (1.0.0)
-  - AEPServices (3.1.0)
+  - AEPServices (3.1.2)
 
 DEPENDENCIES:
   - ACPCore
@@ -31,12 +31,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   ACPCore: 5f00fcf7aba597b29b359e4c14f7f4f1f95503f3
-  AEPCore: 026568b04d8c302ad801a6b4ed6ec3c160817ef6
-  AEPIdentity: 2ca611ed7f2bf081657b311cbffb210900558fa8
-  AEPLifecycle: 59b2de8c96a93647a258a982f1d5b2e16a425360
+  AEPCore: d85439869b2f9bcb9d84c1662ced049dd5fa9b56
+  AEPIdentity: 0102f7e5d0302d5b99cdd34c8ea6c5598ed222d2
+  AEPLifecycle: fdcd802351bec596be0f2365fd21a6f342318a51
   AEPRulesEngine: 8bbc694fce6900cd33b2496c7d4b33ee2eeffc46
-  AEPServices: cc1ec2987185ab01d62f6d41be0bb94a1b892efb
+  AEPServices: 891fc1fb2e2ecacf02f293d1a7f3c478dc4d338b
 
 PODFILE CHECKSUM: 475662d4fbb088c3c6d096df11c31405983609fe
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
